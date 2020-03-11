@@ -1,12 +1,12 @@
 ---
-version: 0.2
+version: 2.0
 
 phases:
-commands: 
-  - "echo Before Building the application..."
-  - "cd /home/ubuntu/AndroidBuildAutomationSample"
-  - "chmod +x ./gradlew"
-pre_build: ~
+  pre_build:
+    commands: 
+      - "echo Before Building the application..."
+      - "cd /home/ubuntu/AndroidBuildAutomationSample"
+      - "chmod +x ./gradlew"
   build:
     commands: 
       - "echo \"Build process start for Android application\""
