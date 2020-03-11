@@ -1,11 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-	PROJECT_DIR='/home/ubuntu/AndroidBuildAutomationSample/'
-    OUTPUT_DIR='/home/ubuntu/AndroidBuildAutomationSample/app/build/outputs/apk/debug'
-
-
 phases:
   pre_build:
   commands:
