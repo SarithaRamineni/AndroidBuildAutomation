@@ -2,7 +2,6 @@ version: 0.2
 
 env:
   variables:
-    build_version: "0.1"
 	PROJECT_DIR='/home/ubuntu/AndroidBuildAutomationSample/'
     OUTPUT_DIR='/home/ubuntu/AndroidBuildAutomationSample/app/build/outputs/apk/debug'
 
