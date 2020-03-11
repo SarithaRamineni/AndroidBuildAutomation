@@ -1,30 +1,31 @@
+---
 version: 0.2
 
 phases:
   pre_build:
   commands:
-	  - echo Before Building the application...
-	  - cd /home/ubuntu/AndroidBuildAutomationSample
-	  - chmod +x ./gradlew
+    - "echo Before Building the application..."
+    - "cd /home/ubuntu/AndroidBuildAutomationSample"
+    - "chmod +x ./gradlew"
   build:
-    commands:
-	  - echo "Build process start for Android application"
-	  - echo "Cleaning.."
-	  - ./gradlew clean
-	  - echo "cleanBuildCache.."
-	  - ./gradlew cleanBuildCache
-	  - echo "Build .. "
-	  - ./gradlew build
-	  - echo "assembleDebug.."
-      - ./gradlew assembleDebug
+    commands: 
+      - "echo \"Build process start for Android application\""
+      - "echo \"Cleaning..\""
+      - "./gradlew clean"
+      - "echo \"cleanBuildCache..\""
+      - "./gradlew cleanBuildCache"
+      - "echo \"Build .. \""
+      - "./gradlew build"
+      - "echo \"assembleDebug..\""
+      - "./gradlew assembleDebug"
   post_build:
     commands:
-	  - echo "Build completed"
+      - "echo \"Build process completed\""
 	  
-artifacts:
-  files:
-     - echo "Copy APK to output folder"
-     - './android/app/build/outputs/**/*.apk'
-  discard-paths: yes
+artifacts: 
+  discard-paths: true
+  files: 
+    - "echo \"Copy APK to output folder\""
+    - ./android/app/build/outputs/**/*.apk
   
  
