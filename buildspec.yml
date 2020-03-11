@@ -24,3 +24,4 @@ artifacts:
   discard-paths: true
   files: 
     - "echo \"Copy APK to output folder\""
+    
