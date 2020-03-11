@@ -20,12 +20,9 @@ phases:
       - "./gradlew assembleDebug"
   post_build:
     commands:
-      - "echo \"Build process completed\""
-	  
+      - "echo \"Build process completed\""	  
 artifacts: 
   discard-paths: true
   files: 
     - "echo \"Copy APK to output folder\""
     - ./android/app/build/outputs/**/*.apk
-  
- 
