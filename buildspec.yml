@@ -5,10 +5,9 @@ phases:
   pre_build:
     commands: 
       - "echo Before Building the application..."
-      - "cd /home/ubuntu/AndroidBuildAutomationSample"
-      - "chmod +x ./gradlew"
   build:
-    commands: 
+    commands:
+      - "chmod +x ./gradlew"
       - "echo \"Build process start for Android application\""
       - "echo \"Cleaning..\""
       - "./gradlew clean"
