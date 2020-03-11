@@ -8,9 +8,9 @@ env:
 
 phases:
   pre_build:
-    commands:
-	  - echo "Before Building the application"
-	  - cd $PROJECT_DIR
+  commands:
+	  - echo Before Building the application...
+	  - cd /home/ubuntu/AndroidBuildAutomationSample
 	  - chmod +x ./gradlew
   build:
     commands:
