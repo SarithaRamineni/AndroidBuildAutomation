@@ -25,5 +25,4 @@ artifacts:
     - '**/*.apk'
     - "echo \"Copy APK to output folder\""
   discard-paths: true
-
     
