@@ -21,8 +21,9 @@ phases:
     commands:
       - "echo \"Build process completed\""	  
 artifacts: 
-  discard-paths: true
   files:
-    - app/*.apk
+    - '**/*.apk'
     - "echo \"Copy APK to output folder\""
+  discard-paths: true
+
     
