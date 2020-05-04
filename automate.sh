@@ -48,5 +48,3 @@ print_blue "\n\n\n Launched main activity\n"
 #Copy APK to output folder
 cp "$PROJECT_DIR"app/build/outputs/apk/debug/app-debug.apk $OUTPUT_DIR
 print_blue "\n\n\n Copying APK to outputs Done\n"
-
-
